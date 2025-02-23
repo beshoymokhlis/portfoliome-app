@@ -1,0 +1,286 @@
+.Home {
+    display: flex;
+    height: 100vh;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.home_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+
+}
+
+.btns {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+
+}
+.contat{
+    font-size: 1.3em;
+    margin-bottom: 5rem;
+  
+} 
+
+.home_container h1 {
+    font-size: 2.5rem;
+    margin-bottom:0.3rem;
+    font-weight:400;
+}
+
+.home_container h2 {
+    font-size: 2.5rem;
+    font-weight:700;
+    margin-bottom: 1rem;
+}
+
+.home_container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.home_me{
+    width: 430px;
+    height: 430px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background: linear-gradient(45deg, transparent, var(--color-bg-variant),transparent);
+    margin-bottom: 6rem;
+}
+
+ .me {
+    width: 400px;
+    height: 400px;
+    transform: rotate(10deg);
+    border-radius:100%;
+    overflow: hidden;
+    transition: var(--transition);
+
+}
+.me:hover{
+    transform: rotate(0deg);
+}
+/* .scroll_down{
+    position: absolute;
+    bottom: 70px;
+    right: -35px;
+    transform: rotate(90deg);
+    font-weight:300;  
+    font-size: 1.3rem;
+    cursor: pointer;
+} */
+.home_socials{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    bottom: 20px;
+   position: absolute;
+   gap: 0.8rem;
+   align-items: center;
+
+}
+
+.home_socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+    
+}
+
+.home_socials a{
+    font-size: 20px;
+}
+
+             /* responsive */
+
+
+
+@media(max-width:1024px){
+    .home{
+        height: 60hv;
+    }
+    .contat{
+
+        font-size: 1.2rem;
+        margin-bottom: 6rem;
+    }
+    .home_socials{
+       
+       bottom: 10px;
+       gap: 0.4rem;
+       
+    
+    }
+
+}
+
+
+
+@media(max-width:998px){
+    .home_me{
+        width: 300px;
+        height: 300px;
+    }
+    .me {
+        width: 270px;
+        height: 270px;
+}
+.home_container h1 {
+    font-size: 1.7rem;
+  
+}
+
+.home_container h2 {
+    font-size: 2rem;
+   
+   
+}
+
+.home_container p {
+    font-size: 0.9rem;
+}
+.contat{
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+  
+} 
+.home_socials{
+       
+    bottom: 30px;
+    gap: 0.7rem;
+    
+ 
+ }
+}
+
+
+
+@media(max-width:894px){
+    .home_me{
+        width: 270px;
+        height: 270px;
+    }
+    .me {
+        width: 240px;
+        height: 240px;
+}
+.home_container h1 {
+    font-size: 1.6rem;
+  
+}
+
+.home_container h2 {
+    font-size: 1.9rem;
+   
+   
+}
+
+.home_container p {
+    font-size: 0.7rem;
+}
+.contat{
+    font-size: 0.8em;
+    margin-bottom: 2rem;
+  
+} 
+  
+
+}
+
+
+@media(max-width:768px){
+    .home{
+        height: 70hv;
+    }
+    .home_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contat{
+
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    .scroll_down{
+        bottom: 65px;
+     
+    }
+  
+}
+
+
+
+@media(max-width:600px){
+    .home{
+        height: auto;
+    }
+    .home_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contat{
+
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .scroll_down{
+        bottom: 55px;
+     
+    }
+  
+
+}
+
+
+
+
+@media(max-width:426px){
+   
+    .home_me{
+        width: 250px;
+        height: 250px;
+    }
+    .me {
+        width: 220px;
+        height: 220px;
+}
+  
+     .home_socials a{
+        font-size:20px;
+    }
+    .home_socials::after{
+        height: 1rem;
+    } 
+}
+
+
+@media(max-width:321px){
+  
+  .contat{
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  
+  
+} 
+
+ .scroll_down{
+    font-size: 0.9rem; 
+ 
+}
+ .home_socials a{
+    font-size: 15px;
+}
+ }
+
+
+ /* .me { */
+    /* width: 500px;
+    height: 500px;
+    background: linear-gradient(var(--color-primary), transparent);
+    border-radius: 100%;
+    padding: 5rem 1.5rem 1.5rem 1.5rem ;
+    overflow: hidden; */
