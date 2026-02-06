@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import './about.css';
 import IMageME from '../../assets/me-about.png';

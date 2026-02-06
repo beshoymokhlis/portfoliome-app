@@ -1,7 +1,7 @@
-import React from 'react'
+
 import Me from '../../assets/me.jpg';
 import './home.css';
-import Cv from '../../assets/Beshoy-Mokhlis-CV.pdf';
+import Cv from '../../assets/BeshoyMokhlisCV.pdf';
 import HomeSocials from './HomeSocials';
 import AnimatedText from '../home/AnimatedText';
 
@@ -12,7 +12,7 @@ function Home() {
     <div className='Home'>
       <div className="container home_container">
         <div className="contat">
-          <h1>Hello! It's Me</h1>
+          <h1>Hello! Its </h1>
           <AnimatedText />
           <div className="btns">
             <a href={Cv} className='btn' download>Downlod Cv</a>
